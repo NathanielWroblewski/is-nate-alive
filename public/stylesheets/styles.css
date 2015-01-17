@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  background: white no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  position: relative;
+  z-index: 1;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 400px;
+  margin: 0px auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(135, 211, 124);
+  background-position: 65% 53%;
+  background-size: 400%;
+}
+
+.container svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#arc2, #arc3, #arc4, #arc8, #arc9 { fill: rgba(107, 185, 240,0.7) }
+#arc0, #arc1, #arc5, #arc6, #arc7, #arc10, #arc11, #arc12  {
+  fill: rgba(135, 211, 124,0.9)
+}
+
+.lub-outer-circle, .dub-outer-circle { fill: #DB0A5B }
+.lub-inner-circle, .dub-inner-circle { fill: #444 }
+.background { fill: #444 }
+.core { fill: #DB0A5B }
