@@ -111,7 +111,7 @@ var carousel = function() {
     d3.select('.shadow').style('left', 0).style('width', '50%')
   }
   d3.select('.content')
-    .style('background-image', 'url("/public/images/' + img + '.jpg")' )
+    .style('background-image', 'url("/is-nate-alive/public/images/' + img + '.jpg")' )
 }
 
 var random = function(object) {
