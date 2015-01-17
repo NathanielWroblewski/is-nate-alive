@@ -33,10 +33,18 @@ firebase.on('child_added', function(snapshot) {
 #### Code needed for check-in on Torpio Webhook ####
 
 ```js
-var date          = new Date().toDateString(),
-    zapierWebhook = 'https://zapier.com/hooks/catch/PATH_TO_ENDPOINT?date='
+var date = new Date().toLocaleTimeString('en-us', {
+  hour:    '2-digit',
+  minute:  '2-digit',
+  weekday: 'short',
+  year:    'numeric',
+  month:   'short',
+  day:     'numeric',
+  hour12:  true
+})
+  , zapierWebhook = 'https://zapier.com/hooks/catch/ow7wcu/?date='
 
-if (date) http.get(zapierWebhook + date, function(error, response, body) {
+if (datetime) http.get(zapierWebhook + date, function(error, response, body) {
   log.info(error, response, body, date)
 })
 ```
